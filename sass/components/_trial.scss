@@ -1,0 +1,13 @@
+.junkbox{
+    width: 100%;
+    padding: 5rem 10rem;
+    font-size: 4rem;
+
+    &--1{background-color: darken($indigo, 0%);}
+    &--2{background-color: darken($indigo, 10%);}
+    &--3{background-color: darken($indigo, 20%);}
+    &--4{background-color: darken($indigo, 30%);}
+    
+    
+    
+}
