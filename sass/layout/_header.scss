@@ -1,8 +1,80 @@
-.site-header{
+.header-container{
+    display: flex;  
+    justify-content: space-between;
+    //align-items: center;
+}
+
+.header{
+    background-color: $color-primary-dark;
     &__logo-box {
-        position: relative;
-        top: 4rem;
-        left: 4rem;
+        margin-left: 1rem
+    }
+
+    &__logoimg{
+        width : 12rem;
+        height : 4rem;
+        fill: #fff;
+    }    
+
+}
+
+
+
+.header-nav{
+    flex: 0 1 60%;
+    
+   ul{
+       display: flex;
+       justify-content: flex-end;       
+   }
+
+    li{
+        display: flex;
+        list-style: none;
+        margin-right: 0.5rem;
+        //flex-grow: 1;
+    }
+
+    a{
+        flex-grow: 1;
+        
+        padding: 1rem 1.6rem;
+        color: #fff;
+        font-weight: 400;
+        text-decoration: none;
+        font-size: 1.6rem;
+        background-color: rgba(white, 0.3);      
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+
+
+.header-container{
+    position: relative;
+}
+
+.header{
+
+    background-color: orangered;
+    z-index: 100;
+
+    &__logo-box {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
     }
 
     &__logo {
@@ -15,8 +87,9 @@
         width : 150px;
         height : 60px;
         //fill: $indigo-lightest;
-        fill: $color-white;
-    }
-    
+        fill: #fff;
+        z-index: 10;
+    }    
 
 }
+*/
