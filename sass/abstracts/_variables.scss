@@ -1,8 +1,8 @@
 // COLORS
 $indigo:#30415d;
-$indigo-light: #4A5B77;
-$indigo-dark: #172844;
-$indigo-lightest: #AFC0DC;
+$indigo-light: lighten($indigo, 30%);
+$indigo-dark: darken($indigo, 30%);
+$indigo70l: lighten($indigo, 70%);
 
 $color-primary:#30415d;
 $color-primary-light: #4A5B77;
