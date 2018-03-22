@@ -1,21 +1,21 @@
-.feature-container{
+.scenario-container{
     display: flex;
     flex-wrap: wrap;
 }
 
-.feature {
+.scenario {
     background-color: rgba($color-white, .8);
     //font-size: 1.5rem;
     padding: 1rem;
     text-align: center;
     //border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-    transition: transform .3s;
+    transition: transform .3s cubic-bezier(0.95, 0.05, 0.795, 0.035);
     flex: 0 32%;
     display: flex;
     align-items: center; 
     margin-bottom: 1rem;
-    margin-right: auto;
+    margin-right: auto; 
 
 
     &__icon {

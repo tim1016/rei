@@ -12,6 +12,8 @@
     background-blend-mode: color-burn;
     position: relative;
 
+    // Need to make this image responsive at some point in time
+
     @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
            only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
            only screen and (min-width: 125em) {
@@ -20,5 +22,11 @@
             rgba($color-primary-light, 0.2),
             rgba($color-primary-dark, 0.9)),
         url(../img/manor-house.jpg);
+    }
+
+
+    &__text-box {
+        @include absCenter;
+        text-align: center;
     }
 }

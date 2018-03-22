@@ -1,0 +1,58 @@
+.heading-banner {
+    color: $color-tertiary-light; 
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+    
+
+    &--main {
+        display: block;
+        font-size: 8rem;
+        font-weight: 700;
+        letter-spacing: 2.5rem;
+    
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        
+        @include respond(phone) {
+            letter-spacing: 1rem;
+            font-family: 5rem;
+        }
+    }
+    
+    &--sub {
+        display: block;
+        font-size: 4rem;
+        font-weight: 100;
+        letter-spacing: .8rem;
+        animation: moveInRight 1s ease-out;
+
+        @include respond(phone) {
+            letter-spacing: .5rem;
+        }
+    }
+}
+
+
+.heading-section {
+    color: $color-tertiary-dark;
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 1.2;
+
+    &--centered{
+        text-align: center;
+    }
+
+    &--main {
+        color: $color-secondary;
+        display: block;
+        font-weight: 100;
+    }
+    
+    &--sub {
+        display: block;
+        font-weight: 500;
+    }
+}
