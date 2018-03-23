@@ -1,8 +1,14 @@
-.heading-banner {
+.center{
+    text-align: center;
+}
+
+
+.heading-1 {
     color: $color-tertiary-light; 
     text-transform: uppercase;
     backface-visibility: hidden;
     margin-bottom: 6rem;
+    font-size: 6rem;
     
 
     &--main {
@@ -10,15 +16,6 @@
         font-size: 8rem;
         font-weight: 700;
         letter-spacing: 2.5rem;
-    
-        animation-name: moveInLeft;
-        animation-duration: 1s;
-        animation-timing-function: ease-out;
-        
-        @include respond(phone) {
-            letter-spacing: 1rem;
-            font-family: 5rem;
-        }
     }
     
     &--sub {
@@ -26,24 +23,19 @@
         font-size: 4rem;
         font-weight: 100;
         letter-spacing: .8rem;
-        animation: moveInRight 1s ease-out;
 
-        @include respond(phone) {
-            letter-spacing: .5rem;
-        }
     }
 }
 
 
-.heading-section {
+
+
+.heading-2 {
     color: $color-tertiary-dark;
     font-size: 4rem;
     font-weight: 300;
     line-height: 1.2;
 
-    &--centered{
-        text-align: center;
-    }
 
     &--main {
         color: $color-secondary;
@@ -55,4 +47,12 @@
         display: block;
         font-weight: 500;
     }
+}
+
+
+.heading-3 {
+    color: $color-secondary-light;
+    font-size: 2.4rem;
+    font-weight: 300;
+    line-height: 1.2;
 }

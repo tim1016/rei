@@ -41,3 +41,10 @@
         transform: translate(0);
     }
 }
+
+.moveinleft { animation: moveInLeft 1s ease-out;}
+.moveinright{ animation: moveInRight 1s ease-out;}
+.moveinbottom{
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}

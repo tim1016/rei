@@ -19,7 +19,7 @@ $color-secondary-light: #E98180;
 $color-secondary-dark: #B64E4D;
 
 $blue: #8eaebd;
-$blue-light: lighten($blue, 30%);
+$blue-light: lighten($blue, 20%);
 $blue-dark: darken($blue, 30%);
 
 $color-tertiary: $blue;
@@ -29,9 +29,12 @@ $color-tertiary-dark: $blue-dark;
 
 
 $nblack: #301424;
-$nblack-light: #4A2E3E;
-$nblack-dark: #17000B;
+$nblack-light: lighten($nblack, 10%);
+$nblack-dark: darken($nblack, 10%);
 
+$color4: $nblack;
+$color4-light: $nblack-light;
+$color4-dark: $nblack-dark;
 
 
 $color-grey-light-1: #f7f7f7;

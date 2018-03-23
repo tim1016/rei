@@ -1,0 +1,16 @@
+.speciality{
+    background-color: orangered;
+
+    &__photo{
+        height: 25rem; 
+        background-size: contain;
+           
+    }
+
+    &__img{
+        height: 100%;
+        width: auto;
+
+    }
+    
+}

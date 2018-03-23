@@ -43,6 +43,16 @@ ORDER: Base + typography > general layout + grid > page layout > components
     opacity: 1;
     transform: translate(0); } }
 
+.moveinleft {
+  animation: moveInLeft 1s ease-out; }
+
+.moveinright {
+  animation: moveInRight 1s ease-out; }
+
+.moveinbottom {
+  animation: moveInBottom .5s ease-out .75s;
+  animation-fill-mode: backwards; }
+
 *,
 *::after,
 *::before {
@@ -68,6 +78,9 @@ body {
 ::selection {
   background-color: #30415d;
   color: #fff; }
+
+img {
+  max-width: 100%; }
 
 body {
   font-family: "Lato", sans-serif;
@@ -130,10 +143,10 @@ body {
   .btn--white::after {
     background-color: #fff; }
 
-.btn--green {
+.btn--primary {
   background-color: #30415d;
   color: #fff; }
-  .btn--green::after {
+  .btn--primary::after {
     background-color: #30415d; }
 
 .btn::after {
@@ -147,10 +160,6 @@ body {
   left: 0;
   z-index: -1;
   transition: all .4s; }
-
-.btn--animated {
-  animation: moveInBottom .5s ease-out .75s;
-  animation-fill-mode: backwards; }
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
@@ -194,7 +203,7 @@ body {
   .scenario:hover {
     transform: translateY(-0.5rem) scale(1.03); }
 
-.page-banner {
+.banner {
   height: 75vh;
   background-image: radial-gradient(circle at center, rgba(207, 103, 102, 0.8), rgba(48, 65, 93, 0.8)), url(../img/manor-house.jpg);
   background-size: cover;
@@ -202,56 +211,68 @@ body {
   background-blend-mode: color-burn;
   position: relative; }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
-    .page-banner {
+    .banner {
       background-image: linear-gradient(to right bottom, rgba(74, 91, 119, 0.2), rgba(23, 40, 68, 0.9)), url(../img/manor-house.jpg); } }
-  .page-banner__text-box {
+  .banner__text-box {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
 
-.heading-banner {
-  color: #eff3f5;
+.center {
+  text-align: center; }
+
+.heading-1 {
+  color: #cedce3;
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 6rem; }
-  .heading-banner--main {
+  margin-bottom: 6rem;
+  font-size: 6rem; }
+  .heading-1--main {
     display: block;
     font-size: 8rem;
     font-weight: 700;
-    letter-spacing: 2.5rem;
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out; }
-    @media only screen and (max-width: 37.5em) {
-      .heading-banner--main {
-        letter-spacing: 1rem;
-        font-family: 5rem; } }
-  .heading-banner--sub {
+    letter-spacing: 2.5rem; }
+  .heading-1--sub {
     display: block;
     font-size: 4rem;
     font-weight: 100;
-    letter-spacing: .8rem;
-    animation: moveInRight 1s ease-out; }
-    @media only screen and (max-width: 37.5em) {
-      .heading-banner--sub {
-        letter-spacing: .5rem; } }
+    letter-spacing: .8rem; }
 
-.heading-section {
+.heading-2 {
   color: #426170;
   font-size: 4rem;
   font-weight: 300;
   line-height: 1.2; }
-  .heading-section--centered {
-    text-align: center; }
-  .heading-section--main {
+  .heading-2--main {
     color: #cf6766;
     display: block;
     font-weight: 100; }
-  .heading-section--sub {
+  .heading-2--sub {
     display: block;
     font-weight: 500; }
+
+.heading-3 {
+  color: #E98180;
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 1.2; }
+
+.speciality {
+  background-color: orangered; }
+  .speciality__photo {
+    height: 25rem;
+    background-size: contain; }
+  .speciality__img {
+    height: 100%;
+    width: auto; }
+
+.generic-text {
+  font-weight: 300;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  color: #333; }
 
 .footer {
   background-color: #333;
@@ -412,19 +433,14 @@ body {
 
 }
 */
-.section-about {
-  background-color: #f7f7f7;
-  padding: 25rem 0;
-  margin-top: -20vh; }
-  @media only screen and (max-width: 56.25em) {
-    .section-about {
-      padding: 20rem 0; } }
+.section-specialities {
+  padding: 5rem 0;
+  background-color: #cedce3; }
 
 .section-scenarios {
   padding: 5rem 0;
   background-color: #eee;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap; }
 
 .section-tours {
