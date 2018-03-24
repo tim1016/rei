@@ -1,5 +1,9 @@
 .speciality{
-    background-color: orangered;
+    background-color: lighten(white,20%);
+    
+    &>div{
+        padding: 2rem;
+    }
 
     &__photo{
         height: 25rem; 
@@ -10,7 +14,15 @@
     &__img{
         height: 100%;
         width: auto;
-
-    }
+    } 
     
+}
+
+.specialities-container{
+    display: flex;
+
+    & > div {
+        display: flex;
+    }
+        
 }

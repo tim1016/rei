@@ -113,6 +113,9 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
+.light-shadow {
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -204,15 +207,7 @@ body {
     transform: translateY(-0.5rem) scale(1.03); }
 
 .banner {
-  height: 75vh;
-  background-image: radial-gradient(circle at center, rgba(207, 103, 102, 0.8), rgba(48, 65, 93, 0.8)), url(../img/manor-house.jpg);
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: color-burn;
   position: relative; }
-  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
-    .banner {
-      background-image: linear-gradient(to right bottom, rgba(74, 91, 119, 0.2), rgba(23, 40, 68, 0.9)), url(../img/manor-house.jpg); } }
   .banner__text-box {
     position: absolute;
     top: 50%;
@@ -260,13 +255,20 @@ body {
   line-height: 1.2; }
 
 .speciality {
-  background-color: orangered; }
+  background-color: white; }
+  .speciality > div {
+    padding: 2rem; }
   .speciality__photo {
     height: 25rem;
     background-size: contain; }
   .speciality__img {
     height: 100%;
     width: auto; }
+
+.specialities-container {
+  display: flex; }
+  .specialities-container > div {
+    display: flex; }
 
 .generic-text {
   font-weight: 300;
@@ -433,56 +435,18 @@ body {
 
 }
 */
-.section-specialities {
-  padding: 5rem 0;
-  background-color: #cedce3; }
-
-.section-scenarios {
-  padding: 5rem 0;
-  background-color: #eee;
-  display: flex;
-  flex-wrap: wrap; }
-
-.section-tours {
-  background-color: #f7f7f7;
-  padding: 25rem 0 15rem 0;
-  margin-top: -10rem; }
-  @media only screen and (max-width: 56.25em) {
-    .section-tours {
-      padding: 20rem 0 10rem 0; } }
-
-.section-stories {
-  position: relative;
-  padding: 15rem 0; }
-  @media only screen and (max-width: 56.25em) {
-    .section-stories {
-      padding: 10rem 0; } }
-
-.section-book {
-  padding: 15rem 0;
-  background-image: linear-gradient(to right bottom, #4A5B77, #172844); }
-  @media only screen and (max-width: 56.25em) {
-    .section-book {
-      padding: 10rem 0; } }
-
-.book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
-  background-size: 100%;
-  border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
-  @media only screen and (max-width: 75em) {
-    .book {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/nat-10.jpg);
-      background-size: cover; } }
-  @media only screen and (max-width: 56.25em) {
-    .book {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10.jpg); } }
-  .book__form {
-    width: 50%;
-    padding: 6rem; }
-    @media only screen and (max-width: 75em) {
-      .book__form {
-        width: 65%; } }
-    @media only screen and (max-width: 56.25em) {
-      .book__form {
-        width: 100%; } }
+.section {
+  padding: 5rem 0; }
+  .section--banner {
+    height: 75vh;
+    background-image: radial-gradient(circle at center, rgba(207, 103, 102, 0.8), rgba(48, 65, 93, 0.8)), url(../img/manor-house.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: color-burn; }
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+      .section--banner {
+        background-image: linear-gradient(to right bottom, rgba(74, 91, 119, 0.2), rgba(23, 40, 68, 0.9)), url(../img/manor-house.jpg); } }
+  .section--specialities {
+    background-color: #cedce3; }
+  .section--scenarios {
+    background-color: #eee; }

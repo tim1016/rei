@@ -1,0 +1,42 @@
+.section{
+    padding: 5rem 0;
+
+    &--banner{
+        height: 75vh;
+        background-image: 
+        radial-gradient(
+            circle at center,
+            rgba($color-secondary, 0.8),
+            rgba($color-primary, 0.8)),
+        url(../img/manor-house.jpg);
+    
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: color-burn;
+   
+    
+        // Need to make this image responsive at some point in time
+    
+        @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+               only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+               only screen and (min-width: 125em) {
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-primary-light, 0.2),
+                rgba($color-primary-dark, 0.9)),
+            url(../img/manor-house.jpg);
+        }
+    }
+
+    &--specialities{
+        background-color: $color-tertiary-light;
+    }
+
+    &--scenarios{
+        background-color: $color-grey-light-2;
+    }
+
+
+
+}
+
