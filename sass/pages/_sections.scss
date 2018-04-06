@@ -2,7 +2,7 @@
     padding: 5rem 0;
 
     &--banner{
-        height: 75vh;
+        
         background-image: 
         radial-gradient(
             circle at center,
@@ -39,4 +39,9 @@
 
 
 }
+
+.footer{
+    background-color: $color-grey-dark-3;
+}
+
 

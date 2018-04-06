@@ -1,21 +1,26 @@
 .speciality{
     background-color: lighten(white,20%);
-    
-    &>div{
+    padding: 2rem;
+/*
+    & > div{
         padding: 2rem;
     }
-
+*/
     &__photo{
         height: 25rem; 
-        background-size: contain;
-           
+        background-size: cover;
+        margin-bottom: 2rem; 
     }
 
     &__img{
-        height: 100%;
+        min-height: 100%;
         width: auto;
     } 
-    
+
+    &__content{
+        text-align: justify;
+        text-justify: inter-word;
+    }
 }
 
 .specialities-container{
@@ -23,6 +28,8 @@
 
     & > div {
         display: flex;
+        //flex-direction: column;
+        
     }
         
 }

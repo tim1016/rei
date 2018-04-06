@@ -1,35 +1,39 @@
 .scenario-container{
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .scenario {
-    background-color: rgba($color-white, .8);
+    background-image: linear-gradient(to bottom, $color-tertiary-light, #fff);
+    border-radius: 0.1rem 2rem;
     //font-size: 1.5rem;
-    padding: 1rem;
-    text-align: center;
-    //border-radius: 3px;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-    transition: transform .3s cubic-bezier(0.95, 0.05, 0.795, 0.035);
-    flex: 0 32%;
-    display: flex;
+    padding: 1rem 2rem;
+    
+    
+    color: $color-primary;
+    transition: all .5s ease;
+
+    display: flex; 
     align-items: center; 
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
     margin-right: auto; 
 
 
     &__icon {
         width: 3rem;
         height: 3rem;
-        fill: $color-primary-light;
+        fill: currentColor;
         margin-right: 1.5rem;
+        display: inline-block;
     }
 
     &:hover {
-        transform: translateY(-.5rem) scale(1.03);
+        transform: scale(1.01);
+        background-image: linear-gradient(to top, $color-tertiary-light, #fff);
+        cursor: pointer;
     }
 }
 
 .scenario-heading{
-    
+    font-size: 2.0rem;
+    font-weight: 100;
+    display: inline-block;
 }
