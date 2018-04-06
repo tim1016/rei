@@ -6,6 +6,13 @@
     }
 }
 
+
+@mixin mp0 {
+    margin: 0;
+    padding: 0;
+}
+
+
 @mixin absCenter {
     position: absolute;
     top: 50%;
