@@ -7,12 +7,9 @@ nav {
 	  li {
 		  float: left;
 		  position: relative;
-		  
-
-
 			a {
 				display: block;
-				padding: 0 20px;
+				padding: 0 2rem;
 				line-height: $nav-height;
 				background: $nav-background;
 				color: $nav-font-color;
@@ -23,16 +20,15 @@ nav {
 
 				}
 				&:not(:only-child):after {
-					padding-left: 4px;
+					padding-left: .4rem;
 					content: ' ▾';
-
 				} 
 			} // Dropdown list
 			ul li {
-				min-width: 190px;
+				min-width: 19rem;
 
 				a {
-					padding: 15px;
+					padding: 1.5rem;
 					line-height: 20px;
 				}
 			}
@@ -44,7 +40,7 @@ nav {
 	display: none;
 	position: absolute;
 	z-index: 1;
-	box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 .3rem 1.2rem rgba(0, 0, 0, 0.15);
 }
 
 .nav-mobile {
@@ -60,17 +56,18 @@ nav {
 
 #nav-toggle {
 	position: absolute;
-	left: 18px;
-	top: 22px;
+	left: 1.8rem;
+	top: 2.2rem;
 	cursor: pointer;
-	padding: 10px 35px 16px 0px;
+    padding: 10px 35px 16px 0px;
+    padding: 1rem 3.5rem 1.6rem 0;
 	span,
 	span:before,
 	span:after {
 		cursor: pointer;
-		border-radius: 1px;
-		height: 5px;
-		width: 35px;
+		border-radius: .1rem;
+		height: .5rem;
+		width: 3.5rem;
 		background: $nav-font-color;
 		position: absolute;
 		display: block;
@@ -78,10 +75,10 @@ nav {
 		transition: all 300ms ease-in-out;
 	}
 	span:before {
-		top: -10px;
+		top: -1rem;
 	}
 	span:after {
-		bottom: -10px;
+		bottom: -1rem;
 	}
 	&.active span {
 		background-color: transparent;
@@ -90,10 +87,10 @@ nav {
 			top: 0;
 		}
 		&:before {
-			transform: rotate(45deg);
+			transform: rotate(135deg);
 		}
 		&:after {
-			transform: rotate(-45deg);
+			transform: rotate(-135deg);
 		}
 	}
 }
@@ -115,17 +112,25 @@ nav {
 
 	nav {
 		width: 100%;
-		padding: $nav-height 0 15px;
+		padding: $nav-height 0 1.5rem;
 		ul {
 			display: none;
 			li {
-				float: none;
+                float: none;
+
 				a {
-					padding: 15px;
-					line-height: 20px;
+					padding: 1.5rem;
+                    line-height: 2rem;
+                    border-bottom: 0.1rem solid $color-primary-light;
+                    &:not(:only-child):after {
+                        float: right;
+                        padding-right: .4rem;
+                        content: ' ▾';
+                    }
 				}
 				ul li a {
-					padding-left: 30px;
+                    padding-left: 3rem;
+                    
 				}
 			}
 		}
@@ -141,7 +146,8 @@ nav {
 
 .navigation {
 	height: $nav-height;
-	background: $nav-background;
+    background: $nav-background;
+    font-size: $default-font-size;
 }
 
 

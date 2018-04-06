@@ -590,68 +590,69 @@ nav {
       position: relative; }
       nav ul li a {
         display: block;
-        padding: 0 20px;
-        line-height: 70px;
-        background: #262626;
+        padding: 0 2rem;
+        line-height: 7rem;
+        background: #172844;
         color: #ffffff;
         text-decoration: none; }
         nav ul li a:hover {
-          background: #2581DC;
+          background: #4A5B77;
           color: #ffffff; }
         nav ul li a:not(:only-child):after {
-          padding-left: 4px;
+          padding-left: .4rem;
           content: ' ▾'; }
       nav ul li ul li {
-        min-width: 190px; }
+        min-width: 19rem; }
         nav ul li ul li a {
-          padding: 15px;
+          padding: 1.5rem;
           line-height: 20px; }
 
 .nav-dropdown {
   display: none;
   position: absolute;
   z-index: 1;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 0.3rem 1.2rem rgba(0, 0, 0, 0.15); }
 
 .nav-mobile {
   display: none;
   position: absolute;
   top: 0;
   right: 0;
-  background: #262626;
-  height: 70px;
-  width: 70px; }
+  background: #172844;
+  height: 7rem;
+  width: 7rem; }
 
 #nav-toggle {
   position: absolute;
-  left: 18px;
-  top: 22px;
+  left: 1.8rem;
+  top: 2.2rem;
   cursor: pointer;
-  padding: 10px 35px 16px 0px; }
+  padding: 10px 35px 16px 0px;
+  padding: 1rem 3.5rem 1.6rem 0; }
   #nav-toggle span,
   #nav-toggle span:before,
   #nav-toggle span:after {
     cursor: pointer;
-    border-radius: 1px;
-    height: 5px;
-    width: 35px;
+    border-radius: .1rem;
+    height: .5rem;
+    width: 3.5rem;
     background: #ffffff;
     position: absolute;
     display: block;
     content: '';
     transition: all 300ms ease-in-out; }
   #nav-toggle span:before {
-    top: -10px; }
+    top: -1rem; }
   #nav-toggle span:after {
-    bottom: -10px; }
+    bottom: -1rem; }
   #nav-toggle.active span {
     background-color: transparent; }
     #nav-toggle.active span:before, #nav-toggle.active span:after {
       top: 0; }
     #nav-toggle.active span:before {
-      transform: rotate(45deg); }
+      transform: rotate(135deg); }
     #nav-toggle.active span:after {
-      transform: rotate(-45deg); }
+      transform: rotate(-135deg); }
 
 @media screen and (min-width: 799px) {
   .nav-list {
@@ -662,32 +663,38 @@ nav {
     display: block; }
   nav {
     width: 100%;
-    padding: 70px 0 15px; }
+    padding: 7rem 0 1.5rem; }
     nav ul {
       display: none; }
       nav ul li {
         float: none; }
         nav ul li a {
-          padding: 15px;
-          line-height: 20px; }
+          padding: 1.5rem;
+          line-height: 2rem;
+          border-bottom: 0.1rem solid #4A5B77; }
+          nav ul li a:not(:only-child):after {
+            float: right;
+            padding-right: .4rem;
+            content: ' ▾'; }
         nav ul li ul li a {
-          padding-left: 30px; }
+          padding-left: 3rem; }
   .nav-dropdown {
     position: static; } }
 
 .navigation {
-  height: 70px;
-  background: #262626; }
+  height: 7rem;
+  background: #172844;
+  font-size: 1.6rem; }
 
 .nav-container {
-  max-width: 1000px;
+  max-width: 114rem;
   margin: 0 auto; }
 
 .brand {
   position: absolute;
   padding-left: 20px;
   float: left;
-  line-height: 70px;
+  line-height: 7rem;
   text-transform: uppercase;
   font-size: 1.4em; }
   .brand a,
