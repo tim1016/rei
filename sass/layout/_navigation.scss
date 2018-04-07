@@ -7,13 +7,15 @@ nav {
 	  li {
 		  float: left;
 		  position: relative;
+		  z-index: 20;
 			a {
 				display: block;
 				padding: 0 2rem;
 				line-height: $nav-height;
-				background: $nav-background;
+				background: rgba($nav-background, $nav-opacity);
 				color: $nav-font-color;
-				text-decoration: none;
+                text-decoration: none;
+                border-bottom: 0.1rem solid $color-primary-light;
 				&:hover {
 					background: $link-hover-color;
 					color: $nav-font-color;
@@ -28,8 +30,11 @@ nav {
 				min-width: 19rem;
 
 				a {
-					padding: 1.5rem;
+					background: linear-gradient(to bottom, $color-primary-light, $color-primary-dark);
+					padding: .5rem 1rem;
 					line-height: 20px;
+					animation: slideMenu .5s ease-out;
+					animation-fill-mode: both;
 				}
 			}
 		}
@@ -39,8 +44,9 @@ nav {
 .nav-dropdown{
 	display: none;
 	position: absolute;
-	z-index: 1;
+	z-index: 20;
 	box-shadow: 0 .3rem 1.2rem rgba(0, 0, 0, 0.15);
+
 }
 
 .nav-mobile {
@@ -121,7 +127,7 @@ nav {
 				a {
 					padding: 1.5rem;
                     line-height: 2rem;
-                    border-bottom: 0.1rem solid $color-primary-light;
+
                     &:not(:only-child):after {
                         float: right;
                         padding-right: .4rem;
@@ -144,11 +150,6 @@ nav {
 }
 
 
-.navigation {
-	height: $nav-height;
-    background: $nav-background;
-    font-size: $default-font-size;
-}
 
 
 
@@ -159,21 +160,44 @@ nav {
 
 
 .brand {
-	position: absolute;
-	padding-left: 20px;
+    width: 18rem;
+    background-color: $color-primary-dark;
+    padding: 0.5rem;
+    position: absolute;
+    float: left;
+    text-align: center;
+
+    /*
+	position: absolute; 
+	padding-left: 2rem;
 	float: left;
 	line-height: $nav-height;
 	text-transform: uppercase;
-	font-size: 1.4em;
+	font-size: $default-font-size; */
 	a,
 	a:visited {
 	  color: $nav-font-color;
 	  text-decoration: none;
-	}
+    }
+    
+    &__img{
+        width : 12rem;
+        height : 5rem;
+        fill: #fff;
+
+    }
+
+    &__text{
+        font-size: 2.0rem;
+        line-height: 1;
+        color: #fff;
+        font-weight: 400;
+        padding: 0;
+        margin: 0;
+    }
+
+
 }
-
-
-  
 
 
 

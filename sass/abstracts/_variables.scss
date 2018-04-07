@@ -59,9 +59,10 @@ $gutter-vertical-small: 6rem;
 $gutter-horizontal: 6rem;
 
 $content-width: $grid-width;
-$breakpoint: 799px;
+$breakpoint: 49em;
 $nav-height: 7rem;
-$nav-background: $color-primary-dark;
+$nav-background: $color-primary;
+$nav-opacity: 0.8;
 $nav-font-color: #ffffff;
 $link-hover-color: $color-primary-light; 
 

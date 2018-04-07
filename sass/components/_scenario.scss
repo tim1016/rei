@@ -16,6 +16,11 @@
     margin-bottom: .5rem;
     margin-right: auto; 
 
+    @include respond(tab-port) {
+        display: block;
+        width: 100% !important;
+    }
+
 
     &__icon {
         width: 3rem;

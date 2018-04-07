@@ -1,6 +1,7 @@
 .banner{
     height: 65vh;
     position: relative;
+    
     &__text-box {
         @include absCenter;
         text-align: center;
