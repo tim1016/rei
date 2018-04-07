@@ -4,7 +4,7 @@
 
 
 .heading-1 {
-    color: $color-tertiary-light; 
+    color: $color-white; 
     text-transform: uppercase;
     backface-visibility: hidden;
     margin-bottom: 6rem;
@@ -14,7 +14,8 @@
     &--main {
         display: block;
         font-size: 7rem;
-        font-weight: 100;
+        font-weight: 200;
+        line-height: 1;
         letter-spacing: 2.5rem;
         @include respond(phone) {
             font-size: 5.5rem;
@@ -25,10 +26,12 @@
     &--sub {
         display: block;
         font-size: 2rem;
-        font-weight: 700;
+        line-height: 1;
+        font-weight: 600;
         letter-spacing: 1.1rem;
         @include respond(phone) {
             letter-spacing: .5rem;
+            font-weight: 500;
         }
     }
 }
@@ -47,6 +50,9 @@
         color: $color-secondary;
         display: block;
         font-weight: 100;
+        @include respond(phone) {
+            font-size: 3rem;
+        }
     }
     
     &--sub {

@@ -3,7 +3,12 @@
     position: relative;
     
     &__text-box {
-        @include absCenter;
         text-align: center;
+        background: rgba(black, 0.8);
+        z-index: 1; 
+        padding: 2rem;
+        border: 2px solid white;
+        border-radius: 25px;
+        @include absCenter;
     }
 }

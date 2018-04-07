@@ -234,17 +234,22 @@ body {
   height: 65vh;
   position: relative; }
   .banner__text-box {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    padding: 2rem;
+    border: 2px solid white;
+    border-radius: 25px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
+    transform: translate(-50%, -50%); }
 
 .center {
   text-align: center; }
 
 .heading-1 {
-  color: #cedce3;
+  color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem;
@@ -252,7 +257,8 @@ body {
   .heading-1--main {
     display: block;
     font-size: 7rem;
-    font-weight: 100;
+    font-weight: 200;
+    line-height: 1;
     letter-spacing: 2.5rem; }
     @media only screen and (max-width: 37.5em) {
       .heading-1--main {
@@ -261,11 +267,13 @@ body {
   .heading-1--sub {
     display: block;
     font-size: 2rem;
-    font-weight: 700;
+    line-height: 1;
+    font-weight: 600;
     letter-spacing: 1.1rem; }
     @media only screen and (max-width: 37.5em) {
       .heading-1--sub {
-        letter-spacing: .5rem; } }
+        letter-spacing: .5rem;
+        font-weight: 500; } }
 
 .heading-2 {
   color: #426170;
@@ -276,6 +284,9 @@ body {
     color: #cf6766;
     display: block;
     font-weight: 100; }
+    @media only screen and (max-width: 37.5em) {
+      .heading-2--main {
+        font-size: 3rem; } }
   .heading-2--sub {
     display: block;
     font-weight: 500; }
@@ -323,7 +334,7 @@ body {
   padding: 5rem 0; }
   .section--banner {
     padding-top: 7rem;
-    background-image: radial-gradient(circle at center, rgba(207, 103, 102, 0.8), rgba(48, 65, 93, 0.8)), url(../img/manor-house.jpg);
+    background-image: url(../img/banner-large.jpg);
     background-size: cover;
     background-position: center;
     background-blend-mode: color-burn; }

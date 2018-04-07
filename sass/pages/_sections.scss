@@ -4,11 +4,7 @@
     &--banner{
         padding-top: $nav-height;
         background-image: 
-        radial-gradient(
-            circle at center,
-            rgba($color-secondary, 0.8),
-            rgba($color-primary, 0.8)),
-        url(../img/manor-house.jpg);
+        url(../img/banner-large.jpg);
     
         background-size: cover;
         background-position: center;
