@@ -1,6 +1,8 @@
 nav {
 	float: right;
 	z-index: 20; 
+	//position: fixed;
+	//border-bottom: 0.1rem solid #fff; 
 	ul {
 		display: none;
 		list-style: none;
@@ -16,8 +18,8 @@ nav {
 				background: rgba($nav-background, $nav-opacity);
 				color: $nav-font-color;
                 text-decoration: none;
-                border-bottom: 0.1rem solid $color-primary-light;
-				&:hover {
+
+				&:hover, &:active {
 					background: $link-hover-color;
 					color: $nav-font-color;
 
