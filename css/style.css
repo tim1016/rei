@@ -245,6 +245,48 @@ body {
     left: 50%;
     transform: translate(-50%, -50%); }
 
+.large-hero {
+  position: relative;
+  white-space: nowrap;
+  border-bottom: 10px solid #cf6766; }
+  .large-hero__image {
+    display: block; }
+  .large-hero__text-content {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%); }
+  .large-hero__title {
+    font-weight: 300;
+    font-size: 4.8rem;
+    margin: 0;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.9); }
+    @media only screen and (max-width: 75em) {
+      .large-hero__title {
+        font-size: 3.6rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .large-hero__title {
+        font-size: 2.8rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .large-hero__title {
+        font-size: 2.4rem; } }
+  .large-hero__subtitle {
+    font-weight: 200;
+    font-size: 2.9rem;
+    margin: 0; }
+    @media only screen and (max-width: 56.25em) {
+      .large-hero__subtitle {
+        font-size: 1.5rem; } }
+  .large-hero__description {
+    font-weight: 100;
+    font-size: 2.0rem;
+    margin: 0; }
+    @media only screen and (max-width: 56.25em) {
+      .large-hero__description {
+        font-size: 1.1rem; } }
+
 .center {
   text-align: center; }
 
@@ -337,10 +379,18 @@ body {
     background-image: url(../img/banner-large.jpg);
     background-size: cover;
     background-position: center;
-    background-blend-mode: color-burn; }
-    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
-      .section--banner {
-        background-image: linear-gradient(to right bottom, rgba(74, 91, 119, 0.2), rgba(23, 40, 68, 0.9)), url(../img/manor-house.jpg); } }
+    background-blend-mode: color-burn;
+    /*    
+        @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+               only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+               only screen and (min-width: 125em) {
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-primary-light, 0.2),
+                rgba($color-primary-dark, 0.9)),
+            url(../img/manor-house.jpg);
+        }
+        */ }
   .section--specialities {
     background-color: #cedce3; }
   .section--scenarios {
