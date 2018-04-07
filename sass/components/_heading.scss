@@ -8,22 +8,28 @@
     text-transform: uppercase;
     backface-visibility: hidden;
     margin-bottom: 6rem;
-    font-size: 6rem;
+    font-size: 4.5rem;
     
 
     &--main {
         display: block;
-        font-size: 8rem;
-        font-weight: 700;
+        font-size: 7rem;
+        font-weight: 100;
         letter-spacing: 2.5rem;
+        @include respond(phone) {
+            font-size: 5.5rem;
+            letter-spacing: 0.5rem;
+        }
     }
     
     &--sub {
         display: block;
-        font-size: 4rem;
-        font-weight: 100;
-        letter-spacing: .8rem;
-
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.1rem;
+        @include respond(phone) {
+            letter-spacing: .5rem;
+        }
     }
 }
 

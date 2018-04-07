@@ -11,7 +11,7 @@
     }
     
     @include respond(tab-port) {
-        width: 90%;  
+        width: 100%;  
         padding: 0 3rem;
     }
 
@@ -34,6 +34,7 @@
         }
     }
 
+    
     .col-1-of-2 {
         width: calc((100% - #{$gutter-horizontal}) / 2);
         
