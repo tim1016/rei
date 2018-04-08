@@ -376,22 +376,42 @@ body {
 .section {
   padding: 5rem 0; }
   .section--banner {
-    padding-top: 7rem;
-    background-image: url(../img/banner-large.jpg);
+    height: 60vh;
+    background-image: url(../img/banner-smaller.jpg);
     background-size: cover;
     background-position: center;
     background-blend-mode: color-burn;
-    /*    
-        @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-               only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-               only screen and (min-width: 125em) {
-            background-image: linear-gradient(
-                to right bottom,
-                rgba($color-primary-light, 0.2),
-                rgba($color-primary-dark, 0.9)),
-            url(../img/manor-house.jpg);
-        }
+    /*
+                        <picture>
+                    <source srcset="img/banner-large.jpg 1920w, img/banner-large-hi-dpi.jpg 3840w" media="(min-width: 1380px)">
+                    <source srcset="img/banner-medium.jpg 1380w, img/banner-medium-hi-dpi.jpg 2760w" media="(min-width: 990px)">
+                    <source srcset="img/banner-small.jpg 990w, img/banner-small-hi-dpi.jpg 1980w" media="(min-width: 640px)">
+                    <img class="large-hero__image" srcset="img/banner-smaller.jpg 640w, img/banner-smaller-hi-dpi.jpg 1280w" alt="Fast Cash Offer">
+                </picture>
+
+
         */ }
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em) {
+      .section--banner {
+        background-image: url(../img/banner-smaller-hi-dpi.jpg); } }
+    @media only screen and (min-width: 56.25em) {
+      .section--banner {
+        background-image: url(../img/banner-small.jpg); } }
+    @media only screen and (min-resolution: 192dpi) and (min-width: 56.25em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 56.25em) {
+      .section--banner {
+        background-image: url(../img/banner-small-hi-dpi.jpg); } }
+    @media only screen and (min-width: 75em) {
+      .section--banner {
+        background-image: url(../img/banner-medium.jpg); } }
+    @media only screen and (min-resolution: 192dpi) and (min-width: 75em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 75em) {
+      .section--banner {
+        background-image: url(../img/banner-medium-hi-dpi.jpg); } }
+    @media only screen and (min-width: 112.5em) {
+      .section--banner {
+        background-image: url(../img/banner-large.jpg); } }
+    @media only screen and (min-resolution: 192dpi) and (min-width: 112.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 112.5em) {
+      .section--banner {
+        background-image: url(../img/banner-large-hi-dpi.jpg); } }
   .section--specialities {
     background-color: #cedce3; }
   .section--scenarios {
