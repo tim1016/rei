@@ -3,22 +3,22 @@
 
 .scenario {
     background-image: linear-gradient(to bottom, $color-tertiary-light, #fff);
-    border-radius: 0.1rem 2rem;
+    //border-radius: 0.1rem 2rem;
     //font-size: 1.5rem;
-    padding: 1rem 2rem;
+    padding: 1rem 2rem;   
     
-    
-    color: $color-primary;
+    color: #fff;//$color-primary;
     transition: all .5s ease;
 
     display: flex; 
-    align-items: center; 
+
     margin-bottom: .5rem;
     margin-right: auto; 
 
     @include respond(tab-port) {
-        display: block;
+        //display: block;
         width: 100% !important;
+        justify-content: center; 
     }
 
 

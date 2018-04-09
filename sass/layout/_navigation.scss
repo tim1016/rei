@@ -1,16 +1,26 @@
+.fixed{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: $nav-height;
+	background: $nav-background;
+	z-index: 20;
+}
+
 nav {
 	float: right;
-	z-index: 20; 
+	z-index: 20;  
 	//position: fixed;
 	//border-bottom: 0.1rem solid #fff; 
 	ul {
 		display: none;
 		list-style: none;
+		z-index: inherit;
 		@include mp0;
 	  li {
 		  float: left;
 		  position: relative;
-		  z-index: 20;
+		  z-index: inherit;
 			a {
 				display: block;
 				padding: 0 2rem;
@@ -31,6 +41,7 @@ nav {
 			} // Dropdown list
 			ul li {
 				min-width: 19rem;
+				z-index: inherit;
 
 				a {
 					background: linear-gradient(to bottom, $color-primary-light, $color-primary-dark);
@@ -38,6 +49,7 @@ nav {
 					line-height: 20px;
 					animation: slideMenu .5s ease-out;
 					animation-fill-mode: both;
+					z-index: inherit;
 				}
 			}
 		}
@@ -57,7 +69,7 @@ nav {
 	position: absolute;
 	top: 0;
 	right: 0;
-	background: $nav-background;
+
 	height: $nav-height;
 	width: $nav-height;
 }
@@ -68,7 +80,6 @@ nav {
 	left: 1.8rem;
 	top: 2.2rem;
 	cursor: pointer;
-    padding: 10px 35px 16px 0px;
     padding: 1rem 3.5rem 1.6rem 0;
 	span,
 	span:before,

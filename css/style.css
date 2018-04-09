@@ -202,18 +202,16 @@ body {
 
 .scenario {
   background-image: linear-gradient(to bottom, #cedce3, #fff);
-  border-radius: 0.1rem 2rem;
   padding: 1rem 2rem;
-  color: #30415d;
+  color: #fff;
   transition: all .5s ease;
   display: flex;
-  align-items: center;
   margin-bottom: .5rem;
   margin-right: auto; }
   @media only screen and (max-width: 56.25em) {
     .scenario {
-      display: block;
-      width: 100% !important; } }
+      width: 100% !important;
+      justify-content: center; } }
   .scenario__icon {
     width: 3rem;
     height: 3rem;
@@ -231,61 +229,17 @@ body {
   display: inline-block; }
 
 .banner {
-  height: 65vh;
-  position: relative; }
-  .banner__text-box {
-    text-align: center;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 1;
-    padding: 2rem;
-    border: 2px solid white;
-    border-radius: 25px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-
-.large-hero {
+  height: 60vh;
   position: relative;
-  white-space: nowrap;
-  border-bottom: 10px solid #cf6766; }
-  .large-hero__image {
-    display: block; }
-  .large-hero__text-content {
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+  text-align: center;
+  border-top: 2px solid white; }
+  .banner__text-box {
+    display: inline-block;
     text-align: center;
-    transform: translate(-50%, -50%); }
-  .large-hero__title {
-    font-weight: 300;
-    font-size: 4.8rem;
-    margin: 0;
-    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.9); }
-    @media only screen and (max-width: 75em) {
-      .large-hero__title {
-        font-size: 3.6rem; } }
-    @media only screen and (max-width: 56.25em) {
-      .large-hero__title {
-        font-size: 2.8rem; } }
-    @media only screen and (max-width: 37.5em) {
-      .large-hero__title {
-        font-size: 2.4rem; } }
-  .large-hero__subtitle {
-    font-weight: 200;
-    font-size: 2.9rem;
-    margin: 0; }
-    @media only screen and (max-width: 56.25em) {
-      .large-hero__subtitle {
-        font-size: 1.5rem; } }
-  .large-hero__description {
-    font-weight: 100;
-    font-size: 2.0rem;
-    margin: 0; }
-    @media only screen and (max-width: 56.25em) {
-      .large-hero__description {
-        font-size: 1.1rem; } }
+    padding: 2rem;
+    margin: 15vh 0;
+    border: 1px solid white;
+    border-radius: 25px; }
 
 .center {
   text-align: center; }
@@ -297,7 +251,6 @@ body {
   margin-bottom: 2.5rem;
   font-size: 4.5rem; }
   .heading-1--main {
-    display: block;
     font-size: 7rem;
     font-weight: 200;
     line-height: 1.2;
@@ -307,7 +260,6 @@ body {
         font-size: 5.5rem;
         letter-spacing: 0.5rem; } }
   .heading-1--sub {
-    display: block;
     font-size: 3rem;
     line-height: 1;
     font-weight: 200;
@@ -319,12 +271,11 @@ body {
         font-weight: 300; } }
 
 .heading-2 {
-  color: #426170;
+  color: #fff;
   font-size: 4rem;
   font-weight: 300;
   line-height: 1.2; }
   .heading-2--main {
-    color: #cf6766;
     display: block;
     font-weight: 100; }
     @media only screen and (max-width: 37.5em) {
@@ -376,46 +327,45 @@ body {
 .section {
   padding: 5rem 0; }
   .section--banner {
-    height: 60vh;
-    background-image: url(../img/banner-smaller.jpg);
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: color-burn;
-    /*
-                        <picture>
-                    <source srcset="img/banner-large.jpg 1920w, img/banner-large-hi-dpi.jpg 3840w" media="(min-width: 1380px)">
-                    <source srcset="img/banner-medium.jpg 1380w, img/banner-medium-hi-dpi.jpg 2760w" media="(min-width: 990px)">
-                    <source srcset="img/banner-small.jpg 990w, img/banner-small-hi-dpi.jpg 1980w" media="(min-width: 640px)">
-                    <img class="large-hero__image" srcset="img/banner-smaller.jpg 640w, img/banner-smaller-hi-dpi.jpg 1280w" alt="Fast Cash Offer">
-                </picture>
-
-
-        */ }
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/banner-smaller.jpg);
+    background-blend-mode: multiply;
+    background-size: cover; }
     @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em) {
       .section--banner {
-        background-image: url(../img/banner-smaller-hi-dpi.jpg); } }
+        background: rgba(0, 0, 0, 0.8), url(../img/banner-smaller-hi-dpi.jpg); } }
     @media only screen and (min-width: 56.25em) {
       .section--banner {
-        background-image: url(../img/banner-small.jpg); } }
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/banner-small.jpg);
+        background-size: cover; } }
     @media only screen and (min-resolution: 192dpi) and (min-width: 56.25em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 56.25em) {
       .section--banner {
-        background-image: url(../img/banner-small-hi-dpi.jpg); } }
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/banner-small-hi-dpi.jpg);
+        background-size: cover; } }
     @media only screen and (min-width: 75em) {
       .section--banner {
-        background-image: url(../img/banner-medium.jpg); } }
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/banner-medium.jpg);
+        background-size: cover; } }
     @media only screen and (min-resolution: 192dpi) and (min-width: 75em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 75em) {
       .section--banner {
-        background-image: url(../img/banner-medium-hi-dpi.jpg); } }
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/banner-medium-hi-dpi.jpg);
+        background-size: cover; } }
     @media only screen and (min-width: 112.5em) {
       .section--banner {
-        background-image: url(../img/banner-large.jpg); } }
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/banner-large.jpg);
+        background-size: cover; } }
     @media only screen and (min-resolution: 192dpi) and (min-width: 112.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 112.5em) {
       .section--banner {
-        background-image: url(../img/banner-large-hi-dpi.jpg); } }
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/banner-large-hi-dpi.jpg);
+        background-size: cover; } }
   .section--specialities {
     background-color: #cedce3; }
   .section--scenarios {
-    background-color: #eee; }
+    background-color: #333;
+    /*
+        background-image: url(../img/usingtools.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; */ }
   .section--navigation {
     height: 7rem;
     background: #30415d;
@@ -517,18 +467,27 @@ body {
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 7rem;
+  background: #30415d;
+  z-index: 20; }
+
 nav {
   float: right;
   z-index: 20; }
   nav ul {
     display: none;
     list-style: none;
+    z-index: inherit;
     margin: 0;
     padding: 0; }
     nav ul li {
       float: left;
       position: relative;
-      z-index: 20; }
+      z-index: inherit; }
       nav ul li a {
         display: block;
         padding: 0 2rem;
@@ -543,13 +502,15 @@ nav {
           padding-left: .4rem;
           content: ' ▾'; }
       nav ul li ul li {
-        min-width: 19rem; }
+        min-width: 19rem;
+        z-index: inherit; }
         nav ul li ul li a {
           background: linear-gradient(to bottom, #4A5B77, #172844);
           padding: .5rem 1rem;
           line-height: 20px;
           animation: slideMenu .5s ease-out;
-          animation-fill-mode: both; }
+          animation-fill-mode: both;
+          z-index: inherit; }
 
 .nav-dropdown {
   display: none;
@@ -561,7 +522,6 @@ nav {
   position: absolute;
   top: 0;
   right: 0;
-  background: #30415d;
   height: 7rem;
   width: 7rem; }
 
@@ -570,7 +530,6 @@ nav {
   left: 1.8rem;
   top: 2.2rem;
   cursor: pointer;
-  padding: 10px 35px 16px 0px;
   padding: 1rem 3.5rem 1.6rem 0; }
   #nav-toggle span,
   #nav-toggle span:before,

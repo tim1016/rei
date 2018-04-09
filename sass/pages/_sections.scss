@@ -2,105 +2,62 @@
     padding: 5rem 0;
 
     &--banner{
-        height: 60vh;
-        background-image: 
-        url(../img/banner-smaller.jpg);
-    
+        //height: 65vh;
+        background: linear-gradient(to top, $color-black-transparent, $color-black-transparent), url(../img/banner-smaller.jpg);
+        background-blend-mode: multiply;
         background-size: cover;
-        background-position: center;
-        background-blend-mode: color-burn;
-   
-    
-        /*
-                        <picture>
-                    <source srcset="img/banner-large.jpg 1920w, img/banner-large-hi-dpi.jpg 3840w" media="(min-width: 1380px)">
-                    <source srcset="img/banner-medium.jpg 1380w, img/banner-medium-hi-dpi.jpg 2760w" media="(min-width: 990px)">
-                    <source srcset="img/banner-small.jpg 990w, img/banner-small-hi-dpi.jpg 1980w" media="(min-width: 640px)">
-                    <img class="large-hero__image" srcset="img/banner-smaller.jpg 640w, img/banner-smaller-hi-dpi.jpg 1280w" alt="Fast Cash Offer">
-                </picture>
-
-
-        */
 
         @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), 
         only screen and (-webkit-min-device-pixel-ratio: 2)  and (min-width: 37.5em) {
-            background-image: //linear-gradient(to top, transparent, red),
+            background: rgba(black, 0.8),  
             url(../img/banner-smaller-hi-dpi.jpg);
         }
-
-
-
+        
+        
+        
         @media only screen and (min-width: 56.25em) {
-            background-image: //linear-gradient(to top, transparent, orange),
+            background: linear-gradient(to top, $color-black-transparent, $color-black-transparent),
             url(../img/banner-small.jpg);
-        }
-
-
-        @media only screen and (min-resolution: 192dpi)  and (min-width: 56.25em), 
-        only screen and (-webkit-min-device-pixel-ratio: 2)  and (min-width: 56.25em) {
-            background-image: //linear-gradient(to top, transparent, yellow),
-            url(../img/banner-small-hi-dpi.jpg);
-        }
-
-
-        @media only screen and (min-width: 75em) {
-            background-image: //linear-gradient(to top, transparent, green),
-            url(../img/banner-medium.jpg);
-        }
-
-
-        @media only screen and (min-resolution: 192dpi) and (min-width: 75em), 
-        only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 75em) {
-            background-image: //linear-gradient(to top, transparent, cyan),
-            url(../img/banner-medium-hi-dpi.jpg);
+            background-size: cover;
         }
         
-
-        @media only screen and (min-width: 112.5em) {
-            background-image: //linear-gradient(to top, transparent, blue),
-            url(../img/banner-large.jpg);
+        
+        @media only screen and (min-resolution: 192dpi)  and (min-width: 56.25em), 
+        only screen and (-webkit-min-device-pixel-ratio: 2)  and (min-width: 56.25em) {
+            background: linear-gradient(to top, $color-black-transparent, $color-black-transparent),
+            url(../img/banner-small-hi-dpi.jpg);
+            background-size: cover;
         }
-
-
+        
+        
+        @media only screen and (min-width: 75em) {
+            background: linear-gradient(to top, $color-black-transparent, $color-black-transparent),
+            url(../img/banner-medium.jpg);
+            background-size: cover;
+        }
+        
+        
+        @media only screen and (min-resolution: 192dpi) and (min-width: 75em), 
+        only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 75em) {
+            background: linear-gradient(to top, $color-black-transparent, $color-black-transparent),
+            url(../img/banner-medium-hi-dpi.jpg);
+            background-size: cover;
+        }
+        
+        
+        @media only screen and (min-width: 112.5em) {
+            background: linear-gradient(to top, $color-black-transparent, $color-black-transparent),
+            url(../img/banner-large.jpg);
+            background-size: cover;
+        }
+        
+        
         @media only screen and (min-resolution: 192dpi) and (min-width: 112.5em), 
         only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 112.5em) {
-            background-image: //linear-gradient(to top, transparent, purple),
+            background:linear-gradient(to top, $color-black-transparent, $color-black-transparent),
             url(../img/banner-large-hi-dpi.jpg);
+            background-size: cover;
         }        
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 
     &--specialities{
@@ -108,7 +65,12 @@
     }
 
     &--scenarios{
-        background-color: $color-grey-light-2;
+        background-color: $color-grey-dark-3;
+        /*
+        background-image: url(../img/usingtools.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; */
     }
 
 
