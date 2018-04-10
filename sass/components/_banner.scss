@@ -1,8 +1,8 @@
 .banner{
-    height: 60vh;
+    height: 70vh;
     position: relative;
     text-align: center;
-    border-top: 2px solid white;
+    //border-top: 2px solid white;
 
     
     &__text-box {
@@ -12,7 +12,7 @@
         //background: rgba(black, 0.8);
         padding: 2rem;
         margin: 15vh 0;
-        border: 1px solid white;
+        border: 2px solid white;
         border-radius: 25px;
         //display: inline;
         //@include absCenter;

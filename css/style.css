@@ -138,7 +138,7 @@ body {
   text-decoration: none;
   padding: 1.5rem 4rem;
   display: inline-block;
-  border-radius: 10rem;
+  border-radius: 2.5rem;
   transition: all .2s;
   position: relative;
   font-size: 1.6rem;
@@ -200,45 +200,64 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
 
-.scenario {
-  background-image: linear-gradient(to bottom, #cedce3, #fff);
-  padding: 1rem 2rem;
-  color: #fff;
-  transition: all .5s ease;
+.scenario-container {
   display: flex;
-  margin-bottom: .5rem;
-  margin-right: auto; }
-  @media only screen and (max-width: 56.25em) {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #30415d; }
+
+.scenario-heading-container {
+  background-color: #333;
+  transform: translateY(-50%); }
+
+.scenario {
+  background-color: #eee;
+  padding: 1rem;
+  color: currentColor;
+  transition: all .5s ease;
+  flex: 0 0 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  border: 2px solid currentColor;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+  margin-right: 1rem; }
+  @media only screen and (max-width: 75em) {
     .scenario {
-      width: 100% !important;
-      justify-content: center; } }
+      flex: 0 0 30%; } }
+  @media only screen and (max-width: 37.5em) {
+    .scenario {
+      flex: 0 0 45%; } }
   .scenario__icon {
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 6rem;
     fill: currentColor;
     margin-right: 1.5rem;
     display: inline-block; }
   .scenario:hover {
-    transform: scale(1.01);
-    background-image: linear-gradient(to top, #cedce3, #fff);
+    transform: translateY(-0.2rem);
+    color: #E98180;
+    background-color: #eee;
     cursor: pointer; }
 
 .scenario-heading {
-  font-size: 2.0rem;
-  font-weight: 100;
-  display: inline-block; }
+  display: block;
+  text-align: center;
+  font-weight: 200;
+  fill: currentColor; }
 
 .banner {
-  height: 60vh;
+  height: 70vh;
   position: relative;
-  text-align: center;
-  border-top: 2px solid white; }
+  text-align: center; }
   .banner__text-box {
     display: inline-block;
     text-align: center;
     padding: 2rem;
     margin: 15vh 0;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 25px; }
 
 .center {
@@ -327,7 +346,7 @@ body {
 .section {
   padding: 5rem 0; }
   .section--banner {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/banner-smaller.jpg);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/banner-smaller.jpg);
     background-blend-mode: multiply;
     background-size: cover; }
     @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em) {
@@ -335,32 +354,31 @@ body {
         background: rgba(0, 0, 0, 0.8), url(../img/banner-smaller-hi-dpi.jpg); } }
     @media only screen and (min-width: 56.25em) {
       .section--banner {
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/banner-small.jpg);
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/banner-small.jpg);
         background-size: cover; } }
     @media only screen and (min-resolution: 192dpi) and (min-width: 56.25em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 56.25em) {
       .section--banner {
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/banner-small-hi-dpi.jpg);
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/banner-small-hi-dpi.jpg);
         background-size: cover; } }
     @media only screen and (min-width: 75em) {
       .section--banner {
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/banner-medium.jpg);
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/banner-medium.jpg);
         background-size: cover; } }
     @media only screen and (min-resolution: 192dpi) and (min-width: 75em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 75em) {
       .section--banner {
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/banner-medium-hi-dpi.jpg);
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/banner-medium-hi-dpi.jpg);
         background-size: cover; } }
     @media only screen and (min-width: 112.5em) {
       .section--banner {
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/banner-large.jpg);
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/banner-large.jpg);
         background-size: cover; } }
     @media only screen and (min-resolution: 192dpi) and (min-width: 112.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 112.5em) {
       .section--banner {
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/banner-large-hi-dpi.jpg);
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/banner-large-hi-dpi.jpg);
         background-size: cover; } }
   .section--specialities {
     background-color: #cedce3; }
   .section--scenarios {
-    background-color: #333;
     /*
         background-image: url(../img/usingtools.jpg);
         background-size: cover;
@@ -473,7 +491,8 @@ body {
   width: 100%;
   height: 7rem;
   background: #30415d;
-  z-index: 20; }
+  z-index: 20;
+  border-bottom: 2px solid white; }
 
 nav {
   float: right;

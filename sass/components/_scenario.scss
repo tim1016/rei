@@ -1,44 +1,69 @@
 .scenario-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    //background-color: $color-grey-light-2;
+    color: $color-primary;
+}
+
+.scenario-heading-container{
+    background-color: $color-grey-dark-3;
+    transform: translateY(-50%);
 }
 
 .scenario {
-    background-image: linear-gradient(to bottom, $color-tertiary-light, #fff);
+    background-color: $color-grey-light-2;
     //border-radius: 0.1rem 2rem;
     //font-size: 1.5rem;
-    padding: 1rem 2rem;   
+    padding: 1rem ;   
     
-    color: #fff;//$color-primary;
+    color: currentColor;
     transition: all .5s ease;
+    flex: 0 0 30%;
 
     display: flex; 
+    flex-direction: row;
+    //justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1rem 2rem rgba($color-black, .15);
+  
 
-    margin-bottom: .5rem;
-    margin-right: auto; 
+    border: 2px solid currentColor;
+    border-radius: 2rem;
 
-    @include respond(tab-port) {
-        //display: block;
-        width: 100% !important;
-        justify-content: center; 
+    margin-bottom: 2rem;
+    margin-right: 1rem; 
+
+    @include respond(tab-land) {
+        flex: 0 0 30%;
     }
 
+    @include respond(phone) {
+        flex: 0 0 45%;
+    }
 
     &__icon {
-        width: 3rem;
-        height: 3rem;
+        width: 4rem;
+        height: 6rem;
         fill: currentColor;
         margin-right: 1.5rem;
         display: inline-block;
     }
 
     &:hover {
-        transform: scale(1.01);
-        background-image: linear-gradient(to top, $color-tertiary-light, #fff);
+        transform: translateY(-0.2rem);
+      //  background-image: linear-gradient(to top, $color-tertiary-light, #fff);
+      color: $color-secondary-light;
+      background-color: $color-grey-light-2;
+
         cursor: pointer;
     }
 }
 
 .scenario-heading{
-    font-size: 2.0rem;
-    font-weight: 100;
-    display: inline-block;
+    display: block;
+    text-align: center;
+    //font-size: 2rem;
+    font-weight: 200;
+    fill: currentColor;
 }
