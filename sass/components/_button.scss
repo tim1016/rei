@@ -51,6 +51,19 @@
         }
     }
     
+    &--secondary {
+        background-color: $color-secondary;
+        color: $color-primary;
+        display: block;
+        margin: 8rem auto;
+
+        &::after {
+            background-color: $color-secondary;
+        }
+    }
+
+
+
     &::after {
         content: "";
         display: inline-block;
