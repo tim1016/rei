@@ -482,9 +482,7 @@ body {
   .section--banner {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/banner-smaller.jpg);
     background-blend-mode: multiply;
-    background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover; }
     @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em) {
       .section--banner {
@@ -709,9 +707,11 @@ nav {
         display: block;
         padding: 0 2rem;
         line-height: 7rem;
-        background: rgba(48, 65, 93, 0.8);
         color: #ffffff;
         text-decoration: none; }
+        @media only screen and (max-width: 56.25em) {
+          nav ul li a {
+            background: rgba(48, 65, 93, 0.8); } }
         nav ul li a:hover, nav ul li a:active {
           background: #4A5B77;
           color: #ffffff; }
