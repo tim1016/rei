@@ -23,3 +23,25 @@
 .light-shadow{
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 }
+
+.dark-shadow{
+    box-shadow: 0 0.5rem 2rem rgba($color-primary-light, 1);
+}
+
+.vcenter-table{
+    display: flex;
+    flex-direction: column;
+}
+
+.vcenter-table-cell{
+    margin: auto 0;
+    
+}
+
+
+
+.boxed{
+    border: 2px solid $color-primary-light;
+    background-color: rgba($color-primary, 0.5);
+    border-radius: 2.5rem;
+}

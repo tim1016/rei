@@ -42,7 +42,7 @@
 
 
 .heading-2 {
-    color: #fff;//$color-tertiary-dark;
+    color: $color-grey-dark-3;
     font-size: 4rem;
     font-weight: 300;
     line-height: 1.2;
@@ -51,13 +51,14 @@
     &--main {
         //color: $color-secondary;
         display: block;
-        font-weight: 100;
+        font-weight: 200;
         @include respond(phone) {
             font-size: 3rem;
         }
     }
     
     &--sub {
+        color: $color-secondary;
         display: block;
         font-weight: 500;
     }

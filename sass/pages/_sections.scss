@@ -5,6 +5,7 @@
         //height: 65vh;
         background: linear-gradient(to top, $color-black-transparent, $color-black-transparent), url(../img/banner-smaller.jpg);
         background-blend-mode: multiply;
+        background-position: center;
         background-size: cover;
 
         @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), 

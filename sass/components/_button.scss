@@ -53,12 +53,15 @@
     
     &--secondary {
         background-color: $color-secondary;
-        color: $color-primary;
+        color: #fff;
         display: block;
-        margin: 8rem auto;
+        padding: 1rem 2rem;
+        margin: 0 auto;
+        
 
         &::after {
             background-color: $color-secondary;
+            display: block;
         }
     }
 

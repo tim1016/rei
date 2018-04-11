@@ -1,5 +1,5 @@
 .banner{
-    height: 70vh;
+    //height: 60vh;
     position: relative;
     text-align: center;
     //border-top: 2px solid white;
@@ -12,7 +12,10 @@
         //background: rgba(black, 0.8);
         padding: 2rem;
         margin: 15vh 0;
-        border: 2px solid white;
+        @include respond(tab-port){
+            margin: 10vh 0;
+        }
+        //border: 2px solid white;
         border-radius: 25px;
         //display: inline;
         //@include absCenter;

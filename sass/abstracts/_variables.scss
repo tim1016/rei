@@ -19,7 +19,7 @@ $color-secondary-light: #E98180;
 $color-secondary-dark: #B64E4D;
 
 $blue: #8eaebd;
-$blue-light: lighten($blue, 20%);
+$blue-light: lighten($blue, 20%);   
 $blue-dark: darken($blue, 30%);
 
 $color-tertiary: $blue;
@@ -58,6 +58,12 @@ $grid-width: 114rem;
 $gutter-vertical: 8rem;
 $gutter-vertical-small: 6rem;
 $gutter-horizontal: 6rem;
+
+$form-gutter-vertical: 2rem;
+$form-gutter-vertical-small: 2rem;
+$form-gutter-horizontal: 1rem;
+$form-padding: 1.5rem;
+
 
 $content-width: $grid-width;
 $breakpoint: 49em;
