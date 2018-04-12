@@ -9,18 +9,83 @@
 
         display: inline-block;
         text-align: center;
-        //background: rgba(black, 0.8);
         padding: 2rem;
         margin: 15vh 0;
         @include respond(tab-port){
             margin: 10vh 0;
         }
-        //border: 2px solid white;
         border-radius: 25px;
-        //display: inline;
-        //@include absCenter;
     }
 
+    &--home{
+        //height: 65vh;
+        background: linear-gradient(to top, $color-black-transparent, $color-black-transparent), url(../img/banner-smaller.jpg);
+        background-blend-mode: multiply;
+        background-position: center;
+        background-size: cover;
+
+        @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), 
+        only screen and (-webkit-min-device-pixel-ratio: 2)  and (min-width: 37.5em) {
+            background: rgba(black, 0.8),  
+            url(../img/banner-smaller-hi-dpi.jpg);
+        }
+        
+        
+        
+        @media only screen and (min-width: 56.25em) {
+            background: linear-gradient(to top, $color-black-transparent, $color-black-transparent),
+            url(../img/banner-small.jpg);
+            background-size: cover;
+        }
+        
+        
+        @media only screen and (min-resolution: 192dpi)  and (min-width: 56.25em), 
+        only screen and (-webkit-min-device-pixel-ratio: 2)  and (min-width: 56.25em) {
+            background: linear-gradient(to top, $color-black-transparent, $color-black-transparent),
+            url(../img/banner-small-hi-dpi.jpg);
+            background-size: cover;
+        }
+        
+        
+        @media only screen and (min-width: 75em) {
+            background: linear-gradient(to top, $color-black-transparent, $color-black-transparent),
+            url(../img/banner-medium.jpg);
+            background-size: cover;
+        }
+        
+        
+        @media only screen and (min-resolution: 192dpi) and (min-width: 75em), 
+        only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 75em) {
+            background: linear-gradient(to top, $color-black-transparent, $color-black-transparent),
+            url(../img/banner-medium-hi-dpi.jpg);
+            background-size: cover;
+        }
+        
+        
+        @media only screen and (min-width: 112.5em) {
+            background: linear-gradient(to top, $color-black-transparent, $color-black-transparent),
+            url(../img/banner-large.jpg);
+            background-size: cover;
+        }
+        
+        
+        @media only screen and (min-resolution: 192dpi) and (min-width: 112.5em), 
+        only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 112.5em) {
+            background:linear-gradient(to top, $color-black-transparent, $color-black-transparent),
+            url(../img/banner-large-hi-dpi.jpg);
+            background-size: cover;
+        }        
+    }
+
+    &--privacy {
+        background: linear-gradient(to top, $color-black-transparent, $color-black-transparent), url(../img/privacy.jpg);
+        min-height: 50vh;
+        background-blend-mode: multiply;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+    }
     
 }
 

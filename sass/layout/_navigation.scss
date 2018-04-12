@@ -35,7 +35,7 @@ nav {
 				&:hover, &:active {
 					background: $link-hover-color;
 					color: $nav-font-color;
-
+					border-bottom: 0.4rem solid $color-secondary;
 				}
 				&:not(:only-child):after {
 					padding-left: .4rem;

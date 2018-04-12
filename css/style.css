@@ -285,6 +285,45 @@ body {
     @media only screen and (max-width: 56.25em) {
       .banner__text-box {
         margin: 10vh 0; } }
+  .banner--home {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/banner-smaller.jpg);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover; }
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em) {
+      .banner--home {
+        background: rgba(0, 0, 0, 0.8), url(../img/banner-smaller-hi-dpi.jpg); } }
+    @media only screen and (min-width: 56.25em) {
+      .banner--home {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/banner-small.jpg);
+        background-size: cover; } }
+    @media only screen and (min-resolution: 192dpi) and (min-width: 56.25em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 56.25em) {
+      .banner--home {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/banner-small-hi-dpi.jpg);
+        background-size: cover; } }
+    @media only screen and (min-width: 75em) {
+      .banner--home {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/banner-medium.jpg);
+        background-size: cover; } }
+    @media only screen and (min-resolution: 192dpi) and (min-width: 75em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 75em) {
+      .banner--home {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/banner-medium-hi-dpi.jpg);
+        background-size: cover; } }
+    @media only screen and (min-width: 112.5em) {
+      .banner--home {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/banner-large.jpg);
+        background-size: cover; } }
+    @media only screen and (min-resolution: 192dpi) and (min-width: 112.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 112.5em) {
+      .banner--home {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/banner-large-hi-dpi.jpg);
+        background-size: cover; } }
+  .banner--privacy {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/privacy.jpg);
+    min-height: 50vh;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; }
 
 .center {
   text-align: center; }
@@ -512,38 +551,6 @@ body {
 
 .section {
   padding: 5rem 0; }
-  .section--banner {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/banner-smaller.jpg);
-    background-blend-mode: multiply;
-    background-position: center;
-    background-size: cover; }
-    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em) {
-      .section--banner {
-        background: rgba(0, 0, 0, 0.8), url(../img/banner-smaller-hi-dpi.jpg); } }
-    @media only screen and (min-width: 56.25em) {
-      .section--banner {
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/banner-small.jpg);
-        background-size: cover; } }
-    @media only screen and (min-resolution: 192dpi) and (min-width: 56.25em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 56.25em) {
-      .section--banner {
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/banner-small-hi-dpi.jpg);
-        background-size: cover; } }
-    @media only screen and (min-width: 75em) {
-      .section--banner {
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/banner-medium.jpg);
-        background-size: cover; } }
-    @media only screen and (min-resolution: 192dpi) and (min-width: 75em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 75em) {
-      .section--banner {
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/banner-medium-hi-dpi.jpg);
-        background-size: cover; } }
-    @media only screen and (min-width: 112.5em) {
-      .section--banner {
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/banner-large.jpg);
-        background-size: cover; } }
-    @media only screen and (min-resolution: 192dpi) and (min-width: 112.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 112.5em) {
-      .section--banner {
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/banner-large-hi-dpi.jpg);
-        background-size: cover; } }
   .section--specialities {
     background-color: #cedce3; }
   .section--scenarios {
@@ -552,10 +559,6 @@ body {
         background-size: cover;
         background-position: center;
         background-attachment: fixed; */ }
-  .section--navigation {
-    height: 7rem;
-    background: #30415d;
-    font-size: 1.6rem; }
   .section--book {
     /*        padding: 15rem 0;
         background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
@@ -714,12 +717,10 @@ body {
   .form-row .form-col-3-of-4 {
     width: calc(3 * ((100% - 3 * 1rem) / 4) + 2 * 1rem); }
 
-.header--privacy {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/privacy.jpg);
-  min-height: 50vh;
-  background-blend-mode: multiply;
-  background-position: center;
-  background-size: contain; }
+.header__navigation {
+  height: 7rem;
+  background: #30415d;
+  font-size: 1.6rem; }
 
 .fixed {
   position: fixed;
@@ -754,7 +755,8 @@ nav {
             background: rgba(48, 65, 93, 0.8); } }
         nav ul li a:hover, nav ul li a:active {
           background: #4A5B77;
-          color: #ffffff; }
+          color: #ffffff;
+          border-bottom: 0.4rem solid #cf6766; }
         nav ul li a:not(:only-child):after {
           padding-left: .4rem;
           content: ' ▾'; }
