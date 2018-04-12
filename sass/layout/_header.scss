@@ -1,0 +1,10 @@
+.header{
+    &--privacy {
+        background: linear-gradient(to top, $color-black-transparent, $color-black-transparent), url(../img/privacy.jpg);
+        min-height: 50vh;
+        background-blend-mode: multiply;
+        background-position: center;
+        background-size: contain;
+        
+    }
+}

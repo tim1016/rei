@@ -289,31 +289,38 @@ body {
 .center {
   text-align: center; }
 
-.heading-1 {
+.display-1 {
   color: #fff;
-  text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 2.5rem;
   font-size: 4.5rem; }
-  .heading-1--main {
+  .display-1--main {
     font-size: 7rem;
+    text-transform: uppercase;
     font-weight: 200;
     line-height: 1.2;
     letter-spacing: 2.5rem; }
     @media only screen and (max-width: 37.5em) {
-      .heading-1--main {
+      .display-1--main {
         font-size: 5.5rem;
         letter-spacing: 0.5rem; } }
-  .heading-1--sub {
+  .display-1--sub {
     font-size: 3rem;
+    text-transform: uppercase;
     line-height: 1;
     font-weight: 200;
     letter-spacing: 1.1rem; }
     @media only screen and (max-width: 37.5em) {
-      .heading-1--sub {
+      .display-1--sub {
         font-size: 2.5rem;
         letter-spacing: .2rem;
         font-weight: 300; } }
+
+.heading-1 {
+  font-size: 7.5rem;
+  color: #fff;
+  font-weight: 200;
+  display: flex; }
 
 .heading-2 {
   color: #333;
@@ -476,6 +483,32 @@ body {
 
 .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
   opacity: 1; }
+
+.ordered-list {
+  list-style: none;
+  counter-reset: counter-name;
+  position: relative; }
+  .ordered-list__item {
+    position: relative;
+    margin-left: 5rem; }
+  .ordered-list__item::before {
+    counter-increment: counter-name;
+    content: counter(counter-name);
+    padding: 0.42857rem 1.14286rem;
+    position: absolute;
+    left: -5rem;
+    top: 0;
+    background: #30415d;
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 5.0em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #cf6766;
+    color: #fff;
+    box-sizing: border-box; }
 
 .section {
   padding: 5rem 0; }
@@ -680,6 +713,13 @@ body {
     width: calc(2 * ((100% - 3 * 1rem) / 4) + 1rem); }
   .form-row .form-col-3-of-4 {
     width: calc(3 * ((100% - 3 * 1rem) / 4) + 2 * 1rem); }
+
+.header--privacy {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/privacy.jpg);
+  min-height: 50vh;
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: contain; }
 
 .fixed {
   position: fixed;
