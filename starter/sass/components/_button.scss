@@ -1,0 +1,104 @@
+.btn{
+  &,
+  &:link, 
+  &:visited{
+    text-transform: uppercase; // This is the initial state of the btn. All the transition properties are specified on the initial state
+    text-decoration: none;
+    padding: 1.5rem 4.0rem;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10rem;
+    transition: all 0.2s ease-in;
+    position: relative; 
+
+    // change for an actual button
+    border: none;
+    }  
+  &:hover {
+    transform: translateY(-0.2rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0; 
+    } 
+  }  
+  &:active, &:focus {  
+    transform: translateY(-0.1rem); 
+  }  
+  &::after {
+    /*This is the initial state of the btn::after. All the transition properties are specified on the initial state*/
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s ease-out; 
+  }
+  &--white {
+    background-color: $color-white ;
+    color: #777; 
+    
+    &::after {
+      background-color:: $color-white; 
+    }
+  }
+  
+  &--center{
+    margin-left:  auto;
+    margin-right:  auto;
+  }
+
+  &--color-primary {
+    background-color:: $color-primary;
+    color: $color-white; 
+    
+    &::after {
+      background-color:: $color-primary; 
+    }
+  }
+
+
+
+  &--animated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
+}
+
+
+.btn-text{
+  &:link, &:visited{
+    color: $color-primary;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $color-primary;
+    padding: .3rem;
+    font-size: $default-font-size;
+    transition: all 0.2s ease-in;
+    }  
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    background-color: $color-primary;
+    color: $color-white;
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0; 
+    } 
+  }  
+  &:active {
+    transform: translateY(-0.1rem); 
+  }  
+  &--light-green {
+    background-color: $color-primary;
+    color: $color-white; 
+  }  
+  &--animated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
+}
