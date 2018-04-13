@@ -1,14 +1,13 @@
 .scenario-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    //background-color: $color-grey-light-2;
+    justify-content: space-around;
+    background-color: $color-grey-light-1;
     color: $color-primary;
 }
 
 .scenario-heading-container{
-    background-color: $color-grey-light-1;
-    transform: translateY(-50%);
+    margin-bottom: 3rem;
 }
 
 .scenario {

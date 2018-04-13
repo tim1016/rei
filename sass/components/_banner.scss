@@ -19,6 +19,7 @@
 
     &--home{
         //height: 65vh;
+        border-bottom: .4rem solid $color-secondary;
         background: linear-gradient(to top, $color-black-transparent, $color-black-transparent), url(../img/banner-smaller.jpg);
         background-blend-mode: multiply;
         background-position: center;
