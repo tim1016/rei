@@ -8,8 +8,9 @@ var Project = {
 }
 
 Project.cssLocation = `${docRoot}/css`;
+Project.sassLocation = `${docRoot}/sass`;
 Project.indexFile = `${docRoot}/index.html`;
-Project.styleModules = `${Project.cssLocation}/modules`;
+Project.styleModules = `${Project.sassLocation}/components`;
 Project.baseStyles = `${Project.cssLocation}/base`;
 Project.scripts = `${Project.projectDir}/js`;
 Project.images = `${Project.projectDir}/img`;

@@ -32,36 +32,42 @@ var config = {
 }
 
 gulp.task('beginClean', function() {
- return del(['./app/temp/sprite', Project.sprites]);
+ return del(['./temp/sprite', Project.sprites]);
 });
 
 gulp.task('createSprite', ['beginClean'], function() {
   return gulp.src(Project.icons)
     .pipe(svgSprite(config))
-    .pipe(gulp.dest('./app/temp/sprite/'));
+    .pipe(gulp.dest('./temp/sprite/'));
 });
 
 gulp.task('createPngCopy', ['createSprite'], function(){
-  return gulp.src('./app/temp/sprite/css/*.svg')
+  return gulp.src('./temp/sprite/css/*.svg')
   .pipe(svg2png())
-  .pipe(gulp.dest('./app/temp/sprite/css'));
+  .pipe(gulp.dest('./temp/sprite/css'));
 })
 
 
 gulp.task('copySpriteGraphic', ['createPngCopy'], function() {
-  return gulp.src(['./app/temp/sprite/css/**/*.{svg,png}', './app/temp/sprite/symbol/svg/*.svg'])
+  return gulp.src(['./temp/sprite/css/**/*.{svg,png}', './temp/sprite/symbol/svg/*.svg'])
     .pipe(gulp.dest(Project.sprites));
 });
 
 gulp.task('copySpriteCSS', ['createSprite'], function() {
-  return gulp.src('./app/temp/sprite/css/*.css')
-//    .pipe(rename('_sprite.css'))
+  return gulp.src('./temp/sprite/css/*.css')
+    .pipe(rename('_sprite.scss'))
     .pipe(gulp.dest(Project.styleModules));
 });
 
-gulp.task('endClean', ['copySpriteGraphic', 'copySpriteCSS'], function() {
-  return del('./app/temp/sprite');
+gulp.task('copySymbolFile', ['copySpriteGraphic'], function() {
+  return gulp.src('./img/sprites/sprite.symbol.svg')
+    .pipe(rename('sprite.svg'))
+    .pipe(gulp.dest(Project.images));
 });
 
-gulp.task('icons', ['beginClean', 'createSprite', 'createPngCopy','copySpriteGraphic', 'copySpriteCSS', 'endClean']);
+gulp.task('endClean', ['copySpriteGraphic', 'copySpriteCSS'], function() {
+  return del('./temp/sprite');
+});
+
+gulp.task('icons', ['beginClean', 'createSprite', 'createPngCopy','copySpriteGraphic', 'copySpriteCSS', 'copySymbolFile', 'endClean']);
 
