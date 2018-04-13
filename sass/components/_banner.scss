@@ -2,7 +2,20 @@
     //height: 60vh;
     position: relative;
     text-align: center;
+    border-bottom: .4rem solid $color-secondary;
+    z-index: -1;
+
     //border-top: 2px solid white;
+
+    &__box{
+        display: flex;
+        //background:orangered;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        height: $banner-height;
+
+    }
 
     
     &__text-box {
@@ -17,9 +30,30 @@
         border-radius: 25px;
     }
 
+    &--lease {
+        background: linear-gradient(to top, $color-black-transparent, $color-black-transparent), url(../img/house3.jpg);
+        min-height: $banner-height;
+        background-blend-mode: multiply;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+
+
+    &--privacy {
+        background: linear-gradient(to top, $color-black-transparent, $color-black-transparent), url(../img/privacy.jpg);
+        min-height: 50vh;
+        background-blend-mode: multiply;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+    }
+
     &--home{
         //height: 65vh;
-        border-bottom: .4rem solid $color-secondary;
+        z-index: -1;
         background: linear-gradient(to top, $color-black-transparent, $color-black-transparent), url(../img/banner-smaller.jpg);
         background-blend-mode: multiply;
         background-position: center;
@@ -78,16 +112,7 @@
         }        
     }
 
-    &--privacy {
-        background: linear-gradient(to top, $color-black-transparent, $color-black-transparent), url(../img/privacy.jpg);
-        min-height: 50vh;
-        background-blend-mode: multiply;
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        
-    }
+
     
 }
-
 

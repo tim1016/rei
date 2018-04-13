@@ -4,7 +4,7 @@
 	width: 100%;
 	height: $nav-height;
 	background: $nav-background;
-	z-index: 20;
+	z-index: 200;
 	border-bottom: 2px solid white;
 }
 
@@ -16,12 +16,12 @@ nav {
 	ul {
 		display: none;
 		list-style: none;
-		z-index: inherit;
+		z-index: 200;
 		@include mp0;
 	  li {
 		  float: left;
 		  position: relative;
-		  z-index: inherit;
+		  z-index: 200;
 			a {
 				display: block;
 				padding: 0 2rem;
@@ -44,7 +44,7 @@ nav {
 			} // Dropdown list
 			ul li {
 				min-width: 19rem;
-				z-index: inherit;
+				z-index: 200;
 
 				a {
 					background: linear-gradient(to bottom, $color-primary-light, $color-primary-dark);
